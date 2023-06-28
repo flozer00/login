@@ -1,0 +1,97 @@
+<!--<!DOCTYPE html>-->
+<!--<html lang="ru">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <title>Test</title>-->
+<!--</head>-->
+<!--<body>-->
+<!--    <h1>Hello World</h1>-->
+<!--    {%for i in data%}-->
+<!--    <h3>{{forloop.counter}} {{i}}-->
+<!--        {%if i.last_name.0 == 'Д'%}-->
+<!--        <i style="color: green">{{i.salary}}</i>-->
+<!--        {%elif i.salary < 0%}-->
+<!--        <i style="color: red">{{i.salary}}</i>-->
+<!--        {%else%}-->
+<!--        <i style="color: blue">{{i.salary}}</i>-->
+<!--        {%endif%}-->
+<!--        </h3>-->
+<!--    {%endfor%}-->
+
+<!--</body>-->
+<!--</html>-->
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HORIZ</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ysabeau+SC&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="32x32" href="/logo_horiz.png">
+    <style>
+    .site-header {
+      background-color: #353535;
+      height: 50px;
+    }
+
+    .href_button {
+      text-decoration: none;
+      margin-left: 20px;
+      margin-top: 20px;
+      font-family: 'Ysabeau SC', sans-serif;
+      color: #ffffff;
+    }
+
+    .text_text {
+      text-align: center;
+      font-family: 'Ysabeau SC', sans-serif;
+    }
+
+    .home_logo {
+      font-size: 2rem;
+      text-decoration: none;
+      margin-left: 40px;
+      margin-top: 20px;
+      text-align: left;
+      font-family: 'Ysabeau SC', sans-serif;;
+      color: #ffffff;
+    }
+
+    .zero {
+      color: #353535;
+    }
+    iframe {
+    border: 1px solid black;
+    border-color: #636365;
+    width: 600px; /* takes precedence over the width set with the HTML width attribute */
+}
+
+    </style>
+        <script src="//code.jivo.ru/widget/P6q2AHODqS" async></script>
+</head>
+<body>
+    <nav class="site-header">
+      <div class="container d-flex flex-column flex-md-row justify-content-between">
+              <a class="home_logo" href="{% url 'home'%}">HORIZ</a>
+        <a class="zero">-------------------------------------------------------------------------hidden easter egg---------------------</a>
+        <a class="href_button" href="{% url 'home'%}">HOME</a>
+          <a class="zero">------- </a>
+        <a class="href_button" href="{% url 'home'%}">ABOUT OUR</a>
+          <a class="zero">------- </a>
+        <a class="href_button" href="{% url 'home'%}">SUPPORT</a>
+        <a class="zero">-------------hidden easter egg----------------------------------------------------------- </a>
+        <a class="href_button" href="{% url 'register'%}">REGISTER</a>
+        <a class="href_button" href="{% url 'authorization'%}">LOGIN</a>
+      </div>
+    </nav>
+<h1></h1>
+<hr color="#A9A9A9" size="0.6" width="1750">
+<h1 class="text_text"> ТЕКСТ  МОРЗЕ</h1>
+<iframe id="morse-decoder-iframe" src="https://embed.morsedecoder.com/ru/#-|.|%2F|%20|5|0.1|500|triangle" width="110%" height="100%" style="display: block; margin: 0px auto; border: 0px;"></iframe>
+<hr color="#A9A9A9" size="0.6" width="1750">
+
+</body>
+</html>
